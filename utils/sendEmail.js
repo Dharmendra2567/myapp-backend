@@ -19,6 +19,6 @@ exports.sendEmail = async (mailOptions) => {
     }
 
     await transport.sendMail(message)
-    .then(()=>console.log("Email send successfully"))
+    .then(()=>console.log("Email sent successfully"))
     .catch(()=>console.log("failed to send email"))
 }

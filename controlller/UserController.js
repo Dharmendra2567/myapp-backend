@@ -178,7 +178,6 @@ exports.signin = async (req, res) => {
     const { _id, username, role } = user
     return res.status(200).json({ token, user: { _id, username, role, email } })
 }
-
 //signout
 exports.signout = async (req, res) => {
     let response = await res.clearCookie('myCookie')
