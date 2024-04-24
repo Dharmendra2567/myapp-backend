@@ -40,7 +40,7 @@ exports.addUser = async (req, res) => {
     //add user
     userToadd = await userToadd.save()
     if (!userToadd) {
-        return res.status(400).json({ erro: "something went wrong" })
+        return res.status(400).json({ error: "something went wrong" })
     }
     else {
         return res.send(userToadd)
